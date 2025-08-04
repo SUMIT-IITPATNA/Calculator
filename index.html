@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - by Sumit</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 40px;">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="inputBox">
+            <div>
+                <button class="operator1">AC</button>
+                <button class="operator1">DEL</button>
+                <button class="operator1">%</button>
+                <button class="operator1">/</button>
+            </div>
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">*</button>
+            </div>
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+            </div>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+            </div>
+            <div>
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="equalbtn">=</button>
+            </div>
+        </div>
+        <!-- History Section -->
+        <div id="historyContainer" style="max-width: 300px; min-width: 200px; background: #f8f8f8; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 16px;">
+            <h3 style="margin-top:0;">History</h3>
+            <ul id="historyList" style="list-style: none; padding: 0; font-family: monospace;"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+
+</body>
+</html>
